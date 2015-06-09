@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head class="container">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../css/gmail.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+<script type="text/javascript" src="../javascript2/gmail.js"></script>
+</head>
+<body ng-controller="formctrl">
+<div id="wrapeer" class="container">
+<span><h2> creat your google account  </h2></span>
+<div class="container"  id="formwrapeer">
+
+<form name="regis">
+<div class="form-group">
+<label for="exampleInputfname">Name</label>
+<input type="text" class="form-control" id="exampleInputfname" name="fname" ng-model="fname" ng-class="">
+<span class="error" ng-show="regis.fname.$touched">Fill Up this Box</span>
+<label for="exampleInputlname">last name</label>
+<input type="text" class="form-control" id="exampleInputlname"  name="lname"ng-model="lname">
+<span class="error" ng-show="regis.lname.$touched">Fill Up this Box</span>
+
+</div>
+
+
+
+<div class="form-group">
+<label for="exampleInputemail">Chose your username</label>
+<input type="text" class="form-control" id="exampleInputemail"  name="email"ng-model="email">
+<span class="error" ng-show="regis.email.$touched">Fill Up this Box</span>
+</div>
+<div class="form-group">
+<label for="exampleInputpassword">your password</label>
+<input type="text" class="form-control" id="exampleInputpassword"  name="password" ng-model="password">
+<span class="error" ng-show="regis.password.$touched">Fill Up this Box</span>
+</div>
+<div>
+
+</div>
+</form>
+
+</div>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" ng-pattern=>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
